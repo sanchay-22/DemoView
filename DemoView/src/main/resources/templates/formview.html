@@ -1,0 +1,14 @@
+<html xmlns:th="http://thymeLeaf.org">
+<form action="#" th:action="@{/ processform}" th:object="${splayer}" method="post">
+  <p> Player Name: <input type="text" th:field="*{name}"/></p>
+  <p> Age: <input type="text" th:field="*{age}"/></p>
+  <p> Club: <input type="text" th:field="*{club}"/></p>
+  <p> Position: <input type="text" th:field="*{position}"/></p>
+  <p> Currently: </p>
+  <p> Retried<input type="checkbox" th:field="*{currently}" th:value="true"/></p>
+  <p>
+  	<input type="submit" value="Submit"/>
+  	<input type="reset" value="Reset"/>
+  </p>
+</form>
+</html xnlns:th="http://thymeLeaf.org"">
